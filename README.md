@@ -12,3 +12,7 @@ Projeto de cunho acadêmico a cerca de um site interativo de um restaure nordest
 - CSS
 - Git
 - GitHub
+
+## Autores
+
+João Henrique Santos da Silva, Yuri Cássio.
