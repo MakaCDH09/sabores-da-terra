@@ -4,7 +4,8 @@ Projeto de prática da disciplina de Padrões Web.
 
 ## Objetivo
 
-Projeto de cunho acadêmico a cerca de um site interativo de um restaure nordestino chamado "Sabores da Terra"
+Projeto de cunho acadêmico voltado ao desenvolvimento de um site interativo para o restaurante nordestino **Sabores da Terra**, com o objetivo de apresentar seu cardápio, sua identidade visual e proporcionar uma experiência intuitiva e acessível aos usuários.
+
 
 ## Tecnologias
 
