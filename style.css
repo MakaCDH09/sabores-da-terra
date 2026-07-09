@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f7d5;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --cor-fundo-escuro: #1f111a;  
+  --cor-fundo-claro: #f5ebe1;
+  --cor-verde-oliva: #5a6642;   
+  --cor-laranja-terra: #c75627;  
+  --cor-texto-claro: #ffffff;   
+}
+
+header#inicio {
+    background-color: var(--cor-fundo-escuro);
+    padding: 20px 5%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+header#inicio h3 {
+    color: var(--cor-texto-claro);
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+    font-size: 32px;
+}
+
+
+header#inicio nav {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+}
+
+header#inicio nav a {
+    color: var(--cor-texto-claro);
+    text-decoration: none; 
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header#inicio nav a {
+    border-bottom: 2px solid var(--cor-laranja-terra);
+    padding-bottom: 4px;
+}
+
+.botoes.botao1 {
+    background-color: var(--cor-laranja-terra);
+    color: var(--cor-texto-claro);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.fontebranca2{
+    background-image:
+    url('Sabores da Terra.png');
+    background-size: cover;
+    background-position: left center;
+    height: 75vh;                  
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;       
+    padding-left: 8%;
+}
+
+section.fontebranca2 h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 80px;               
+    line-height: 1;                
+    margin-bottom: 10px;
+    max-width: 500px;              
+}
+
+section.fontebranca2 p {
+    font-size: 24px;
+    color: var(--cor-laranja-terra); 
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
