@@ -63,7 +63,7 @@ header#inicio nav a {
     text-decoration: none;
 }
 
-.fontebranca2{
+.fontebranca{
     background-image:
     url('Sabores da Terra.png');
     background-size: cover;
@@ -75,7 +75,7 @@ header#inicio nav a {
     padding-left: 8%;
 }
 
-section.fontebranca2 h1 {
+section.fontebranca h1 {
     font-family: 'Playfair Display', serif; 
     font-size: 80px;               
     line-height: 1;                
@@ -83,7 +83,7 @@ section.fontebranca2 h1 {
     max-width: 500px;              
 }
 
-section.fontebranca2 p {
+section.fontebranca p {
     font-size: 24px;
     color: var(--cor-laranja-terra); 
     margin-bottom: 30px;
