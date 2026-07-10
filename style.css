@@ -70,7 +70,7 @@ header#inicio nav a:first-child {
     transform: translateY(2px);
 }
 
-.fontebranca2{
+.fontebranca{
     background-image: url('Sabores da Terra.png');
     background-size: cover;        
     background-position: center left; 
@@ -84,7 +84,7 @@ header#inicio nav a:first-child {
     padding-right: 5%;
 }
 
-section.fontebranca2 h1 {
+section.fontebranca h1 {
     font-family: 'Playfair Display', serif; 
     font-size: clamp(45px, 6vw, 80px); /* 
     margin-bottom: 15px;
@@ -93,7 +93,7 @@ section.fontebranca2 h1 {
     text-align: left;            
 }
 
-section.fontebranca2 p {
+section.fontebranca p {
     font-size: 24px;
     font-size: clamp(18px, 2vw, 24px); 
     color: var(--cor-laranja-terra); 
