@@ -86,7 +86,7 @@ header#inicio nav a:first-child {
 
 section.fontebranca h1 {
     font-family: 'Playfair Display', serif; 
-    font-size: clamp(45px, 6vw, 80px); /* 
+    font-size: clamp(45px, 6vw, 80px);
     margin-bottom: 15px;
     max-width: 550px;              
     color: var(--cor-texto-claro);
