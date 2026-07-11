@@ -23,7 +23,7 @@ header#inicio {
     align-items: center; 
     justify-content: space-between; 
     width: 100%; 
-    position: relative; 
+    position: relative;
 }
 
 header#inicio h3 {
@@ -31,6 +31,7 @@ header#inicio h3 {
     font-family: 'Playfair Display', serif; 
     margin: 0;
     font-size: 32px;
+    
 }
 
 
@@ -38,6 +39,7 @@ header#inicio nav {
     display: flex;
     gap: 20px; 
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 header#inicio nav a {
@@ -46,6 +48,7 @@ header#inicio nav a {
     font-family: sans-serif;
     font-size: 14px;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 header#inicio nav a:first-child {
@@ -70,12 +73,11 @@ header#inicio nav a:first-child {
     transform: translateY(2px);
 }
 
-.fontebranca{
-    background-image: url('Sabores da Terra.png');
+.fontebranca2{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('Sabores da Terra.png');
     background-size: cover;        
     background-position: center left; 
     min-height: 80vh;              
-    width: 100%;
     display: flex;
     flex-direction: column;        
     justify-content: center;       
@@ -84,16 +86,17 @@ header#inicio nav a:first-child {
     padding-right: 5%;
 }
 
-section.fontebranca h1 {
+section.fontebranca2 h1 {
     font-family: 'Playfair Display', serif; 
-    font-size: clamp(45px, 6vw, 80px);
+    font-size: clamp(45px, 6vw, 80px); 
+    line-height: 1.1;                
     margin-bottom: 15px;
     max-width: 550px;              
     color: var(--cor-texto-claro);
     text-align: left;            
 }
 
-section.fontebranca p {
+section.fontebranca2 p {
     font-size: 24px;
     font-size: clamp(18px, 2vw, 24px); 
     color: var(--cor-laranja-terra); 
@@ -122,42 +125,339 @@ section.fontebranca p {
     transform: scale(1.03);                   
 }
 
-#sobre{
+#sobre {
     background-color: var(--cor-fundo-claro);
-    padding: 80px 10%;                      
-    text-align: center;
+    padding: 50px 5%; 
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; 
 }
 
-#sobre h2 {
+
+.coluna-historia {
+    display: flex;
+    gap: 20px;
+    width: 45%; 
+}
+
+.img-restaurante {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.texto-historia h2, .coluna-pratos h2 {
     color: var(--cor-fundo-escuro);
     font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 4vw, 48px);      
-    margin-top: 40px;
-    margin-bottom: 25px;
-    position: relative;
-    display: inline-block;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-#sobre h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--cor-laranja-terra);
-    margin: 10px auto 0;
-}
-
-#sobre p {
-    font-size: 19px;
-    line-height: 1.8;                    
-    color: #4b5563;                        
-    margin: 0 auto 20px;                    
+.texto-historia p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 15px;
 }
 
 .texto-destaque-verde {
-    color: var(--cor-verde-oliva);
+    color: var(--cor-verde-oliva) ;
     font-weight: bold;
-    font-size: 24px ;
-    margin-top: 30px ;
-    font-style: italic;
+    font-size: 16px ;
+}
+
+
+.coluna-pratos {
+    width: 55%;
+}
+
+.grid-pratos {
+    display: flex;
+    gap: 15px;
+}
+
+.card-prato {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 25%; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card-prato img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+.card-prato h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin: 0 5px 5px 5px;
+    color: var(--cor-fundo-escuro);
+}
+
+.card-prato p {
+    font-size: 12px;
+    margin: 0 10px;
+    color: #6b7280;
+}
+
+#producaol {
+    background-color: var(--cor-verde-oliva); 
+    padding: 30px 5%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.titulo-producao h2 {
+    color: var(--cor-texto-claro);
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0;
+    min-width: 200px;
+}
+
+.itens-producao {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    color: var(--cor-texto-claro);
+    text-align: left;
+    flex: 1;
+}
+
+.item h3 {
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.item p {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+section#depoimentos {
+    background-color: var(--cor-fundo-claro);
+    padding: 50px 5%;
+}
+
+section#depoimentos h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.depoimentos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.depoimento-item {
+    padding: 24px;
+    max-width: 320px;
+}
+
+.depoimento-item p {
+    margin: 0;
+    color: #1f2937;
+}
+
+.depoimento-item p.texto-destaque-verde {
+    margin-top: 16px;
+    font-weight: bold;
+    color: var(--cor-verde-oliva);
+}
+
+#reservas {
+    background-color: var(--cor-laranja-terra);
+    padding: 80px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reservas h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 45px);
+    color: var(--cor-texto-claro);
+    margin-bottom: 15px;
+}
+
+#reservas p.fontebranca {
+    font-size: 18px;
+    color: #d1d5db; 
+    max-width: 600px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+
+.botoes.botao3 {
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    padding: 15px 35px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.botoes.botao3:hover {
+    background-color: #7cc57c;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #111827; 
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    color: #ffffff; 
+    font-size: 14px;
+    margin: 0;
+    padding-right: 20px;
+}
+
+footer h2 {
+    color: #ffffff; 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    color: #ffffff; 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contatos-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.contatos-footer a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.contatos-footer a:hover {
+    color: var(--cor-laranja-terra);
+}
+
+@media (max-width: 768px) {
+    header#inicio {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    header#inicio h3 {
+        font-size: 26px; 
+    }
+
+    header#inicio nav {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header#inicio nav a {
+        font-size: 13px; 
+    }
+    
+    
+    .botoes.botao1 {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    
+    #sobre, #producaol {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    
+    .coluna-historia {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .img-restaurante {
+        width: 100%;
+        max-width: 320px; 
+        height: 240px; 
+    }
+
+    
+    .coluna-pratos {
+        width: 100%;
+    }
+
+    
+    .grid-pratos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card-prato {
+        width: calc(50% - 10px); 
+        min-width: 140px;
+    }
+
+    
+    .titulo-producao h2 {
+        min-width: unset;
+        text-align: center;
+    }
+
+    .itens-producao {
+        flex-direction: column; 
+        gap: 25px;
+    }
+
+    .item {
+        text-align: center;
+    }
+
+    #reservas { padding: 50px 5%; }
+    #reservas p.fontebranca { font-size: 15px; margin-bottom: 25px; }
 }
