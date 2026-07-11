@@ -5,12 +5,14 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Sabores da Terra</title>
-    <link rel='stylesheet' href='style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!--aqui é aquela parte de cima que tem as opções de navegação-->
-    <header class="fontebranca" id="inicio">
+    <header bs5 id="inicio">
         <h3> Sabores da Terra </h3>
         <nav>
             <a href="#inicio"> Início </a>
@@ -32,16 +34,18 @@
             <img src="foto do restaurante.png" alt="Restaurante Sabores da Terra" class="img-restaurante">
             <div class="texto-historia">
                 <h2>Nossa história</h2>
-                <p>O Sabores da Terra nasceu do amor pelas tradições do Nordeste e do desejo de compartilhar receitas que atravessam gerações.</p>
-                <p>Acreditamos na força dos ingredientes locais, no preparo cuidadoso e na alegria de reunir pessoas em torno da mesa.</p>
+                <p>O Sabores da Terra nasceu do amor pelas tradições do Nordeste e do desejo de compartilhar receitas
+                    que atravessam gerações.</p>
+                <p>Acreditamos na força dos ingredientes locais, no preparo cuidadoso e na alegria de reunir pessoas em
+                    torno da mesa.</p>
                 <p class="texto-destaque-verde">Seja bem-vindo à nossa casa!</p>
             </div>
         </div>
 
         <div class="coluna-pratos">
             <h2>Pratos em destaque</h2>
-            <div class="grid-pratos">
-                
+            <div class="grid-pratos col-4 col-md-4">
+
                 <div class="card-prato">
                     <img src="vatapá de camarão.png" alt="Vatapá de camarão">
                     <h3>Vatapá de camarão</h3>
@@ -74,7 +78,7 @@
         <div class="titulo-producao">
             <h2>Da nossa terra<br>para sua mesa</h2>
         </div>
-        
+
         <div class="itens-producao">
             <div class="item">
                 <h3>Peixes e frutos do mar</h3>
@@ -103,7 +107,8 @@
             <h1>O que nossos clientes dizem</h1>
             <div class="depoimentos-list">
                 <div class="depoimento-item">
-                    <p>Comida deliciosa, ambiente acolhedor e atendimento impecável. Uma verdadeira viagem pelos sabores do Nordeste!</p>
+                    <p>Comida deliciosa, ambiente acolhedor e atendimento impecável. Uma verdadeira viagem pelos sabores
+                        do Nordeste!</p>
                     <p class="texto-destaque-verde">Mariana L.</p>
                 </div>
                 <div class="depoimento-item">
@@ -116,30 +121,31 @@
                 </div>
             </div>
         </section>
-    <section id="reservas"> 
-        <h2 class="fontebranca">Reserve sua mesa</h2>
-        <p class="fontebranca">Garanta sua experiência no Sabores da Terra e venha viver momentos especias.</p>
-        <div>
-            <p id="reserva" class="botoes botao3" > Reserve sua mesa</p>
-        </div>
-    </section>
-    <footer class="fontebranca" id="contato">
-        <h2>Sabores que alimentam o corpo, memórias que ficam no coração. </h2>
-         <ul>
-        <h3>Funcionamento</h3>
-            <li>Terça e dormingo </li>
-            <li>11h às 16h | 18h às 23h</li>
-        </ul>
-        <h3>Endereço</h3>
-        <ul>
-            <li>Rua das Palmeiras, 123</li>
-            <li>Currais Novos-RN </li>
-        </ul>
-        <h3>Contato</h3>
-        <ul>
-            <li>(84) 99999-9999 </li>
-            <li>contato@saboresdaterra.com</li>
-        </ul>
-    </footer>
+        <section id="reservas">
+            <h2 class="fontebranca">Reserve sua mesa</h2>
+            <p class="fontebranca">Garanta sua experiência no Sabores da Terra e venha viver momentos especias.</p>
+            <div>
+                <a id="reserva" class="botoes botao3" href="paginas/reserva.html">Reserve sua mesa</a>
+            </div>
+        </section>
+        <footer class="fontebranca" id="contato">
+            <h2>Sabores que alimentam o corpo, memórias que ficam no coração. </h2>
+            <ul>
+                <h3>Funcionamento</h3>
+                <li>Terça e dormingo </li>
+                <li>11h às 16h | 18h às 23h</li>
+            </ul>
+            <h3>Endereço</h3>
+            <ul>
+                <li>Rua das Palmeiras, 123</li>
+                <li>Currais Novos-RN </li>
+            </ul>
+            <h3>Contato</h3>
+            <ul>
+                <li>(84) 99999-9999 </li>
+                <li>contato@saboresdaterra.com</li>
+            </ul>
+        </footer>
 </body>
+
 </html>

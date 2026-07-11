@@ -4,8 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
-    <link rel='stylesheet' href='main2.css'>
+    <title>Sabores da Terra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="main2.css">
 </head>
 
 <body>
@@ -38,7 +40,17 @@
         </div>
         <div id="formulario">
             <form>
-                <p>
+                <label>Data</label>
+                <p>selecione a data</p>
+                <input type="date">
+                <label>Horário</label>
+                <p>Escolha o horário</p>
+                <select required>
+                    <option value="">Selecione o horário</option>
+                    <option value="1">11h</option>
+                    <option value="2">18h</option>
+                </select>
+                
                     <label for="turno">Números de pessoas</label><br />
                 <p>Quantidade de pessoas</p>
                 <select id="turno" name="turno" required>
@@ -48,7 +60,17 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                </p>
+                <h3> Seus dados </h3>
+                <p>Preencha seus dados para entrarmos em contato</p>
+                <label for="nomeC"> Nome completo</label>
+                <input id="nomeC" name="nomeC" type="text" placeholder="Digite seu nome completo">
+                <label for="gmail"> E-mail </label>
+                <input id="gmail" name="gmail" type="email" placeholder="seu@email.com">
+                <label for="numero"> Telefone/WhatsApp</label>
+                <input id="numero" name="numero" type="tel" placeholder="(00) 00000-0000">
+                <label for="observacao">Observações (opcional)</label>
+                <input id="observacao" name="observacao" type="text" placeholder="alguma observação especial? Conte para gente.">
+                
             </form>
 
         </div>
