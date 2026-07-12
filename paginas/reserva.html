@@ -23,46 +23,51 @@
             <a class="botoes botao1" href="#reserva"> Reserve sua mesa </a>
         </nav>
     </header>
-    <section class="fontebranca" id="reserva">
+    <section class="fontebranca" id="informacao">
         <h1>Reserve sua mesa</h1>
         <p>Escolha a melhor data e horário para viver momentos especiais com a nossa cozinha regional.</p>
-        <div>
-            <h3></h3>
-            <p>Terça a Quinta
-                11h às 14h30 | 18h às 22h</p>
-            <p>Sexta
-                11h às 15h | 18h às 23h</p>
-            <p>Sábado
-                11h às 16h | 18h às 23h</p>
-            <p>Domingo
-                11h às 16h</p>
-            <p class="fontelaranja">Fechado às segundas-feiras.</p>
+        <div class="card">
+            <div class="card-body">
+                <h3>Horários</h3>
+                <p>Terça a Quinta
+                    11h às 14h30 | 18h às 22h</p>
+                <p>Sexta
+                    11h às 15h | 18h às 23h</p>
+                <p>Sábado
+                    11h às 16h | 18h às 23h</p>
+                <p>Domingo
+                    11h às 16h</p>
+                <p class="fontelaranja">Fechado às segundas-feiras.</p>
+            </div>
         </div>
-        <div id="formulario">
-            <form>
-                <label>Data</label>
-                <p>selecione a data</p>
-                <input type="date">
-                <label>Horário</label>
-                <p>Escolha o horário</p>
-                <select required>
-                    <option value="">Selecione o horário</option>
-                    <option value="1">11h</option>
-                    <option value="2">18h</option>
-                </select>
+    </section>
+    <section id="reserva"  class=" col-6 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <label>Data</label>
+                    <p>selecione a data</p>
+                    <input type="date">
+                    <label>Horário</label>
+                    <p>Escolha o horário</p>
+                    <select required>
+                        <option value="">Selecione o horário</option>
+                        <option value="1">11h</option>
+                        <option value="2">18h</option>
+                    </select>
 
-                <label for="turno">Números de pessoas</label><br />
-                <p>Quantidade de pessoas</p>
-                <select id="turno" name="turno" required>
-                    <option value="">Selecione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-                <h3> Seus dados </h3>
-                <p>Preencha seus dados para entrarmos em contato</p>
-                <label for=" nomeC"> Nome completo</label>
+                    <label for="turno">Números de pessoas</label><br />
+                    <p>Quantidade de pessoas</p>
+                    <select id="turno" name="turno" required>
+                        <option value="">Selecione</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <h3> Seus dados </h3>
+                    <p>Preencha seus dados para entrarmos em contato</p>
+                    <label for=" nomeC"> Nome completo</label>
                     <input id="nomeC" name="nomeC" type="text" placeholder="Digite seu nome completo">
                     <label for="gmail"> E-mail </label>
                     <input id="gmail" name="gmail" type="email" placeholder="seu@email.com">
@@ -71,13 +76,34 @@
                     <label for="observacao">Observações (opcional)</label>
                     <input id="observacao" name="observacao" type="text"
                         placeholder="alguma observação especial? Conte para gente.">
-                <h3>Preferências (opcional)</h3>
-                <label for="restricao"> Conte-nos sobre suas preferências ou restrições alimentares0</label>
-                <select id="restricao" name="restricao">
-                <option> </option>     
-                </select>
+                    <h3>Preferências (opcional)</h3>
+                    <label for="restricao"> Conte-nos sobre suas preferências ou restrições alimentares0</label>
+                    <select id="restricao" name="restricao">
+                        <option value="vegetariano"> Vegetariano </option>
+                        <option value="sem_gluten"> Sem glúten </option>
+                        <option value="sem_lactose"> Sem lactose </option>
+                    </select>
+                </form>
+                <div>
+                    <a class="btn btn-primary" href="#" role="button">Confirmar reserva</a>
 
-            </form>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div>
+        <h3>Onde estamos</h3>
+        <ul>
+            <li>Rua das Palmeiras, 123</li>
+            <li>Salvador-BA</li>
+        </ul>
+        <h3> Chegue tranquilo</h3>
+        <p>temos estacionamento no local e acesso para todos.</p>
+        <h3>Fale com a gente</h3>
+        <ul>
+            <li>(84) 99999-9999 </li>
+            <li>contato@saboresdaterra.com</li>
+        </ul>
 
         </div>
     </section>
