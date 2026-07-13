@@ -45,15 +45,15 @@
         <div class="card">
             <div class="card-body">
                 <form>
-                    <label>Data</label>
+                    <label for="data">Data</label>
                     <p>selecione a data</p>
-                    <input type="date">
-                    <label>Horário</label>
+                    <input input="data" type="date">
+                    <label for="horario">Horário</label>
                     <p>Escolha o horário</p>
-                    <select required>
+                    <select id="horario" required>
                         <option value="">Selecione o horário</option>
-                        <option value="1">11h</option>
-                        <option value="2">18h</option>
+                        <option value="11:00">11h</option>
+                        <option value="18:00">18h</option>
                     </select>
 
                     <label for="turno">Números de pessoas</label><br />
@@ -67,15 +67,14 @@
                     </select>
                     <h3> Seus dados </h3>
                     <p>Preencha seus dados para entrarmos em contato</p>
-                    <label for=" nomeC"> Nome completo</label>
+                    <label for="nomeC"> Nome completo</label>
                     <input id="nomeC" name="nomeC" type="text" placeholder="Digite seu nome completo">
-                    <label for="gmail"> E-mail </label>
-                    <input id="gmail" name="gmail" type="email" placeholder="seu@email.com">
+                    <label for="email"> E-mail </label>
+                    <input id="email" name="email" type="email" placeholder="seu@email.com">
                     <label for="numero"> Telefone/WhatsApp</label>
                     <input id="numero" name="numero" type="tel" placeholder="(00) 00000-0000">
                     <label for="observacao">Observações (opcional)</label>
-                    <input id="observacao" name="observacao" type="text"
-                        placeholder="alguma observação especial? Conte para gente.">
+                    <textarea id="observacao" placeholder="Alguma observação especial? Conte pra gente."></textarea>
                     <h3>Preferências (opcional)</h3>
                     <label for="restricao"> Conte-nos sobre suas preferências ou restrições alimentares</label>
                     <select id="restricao" name="restricao">
@@ -86,7 +85,9 @@
                     </select>
                 </form>
                 <div>
-                    <a class="btn btn-primary" role="button">Confirmar reserva</a>
+                    <button type="submit" class="btn btn-primary" role="button">Confirmar reserva
+
+                    </button>
 
                 </div>
             </div>
@@ -94,12 +95,12 @@
                 <div class="card">
                     <div class="card-body">
                         <h3>Resumo da sua reserva</h3>
-                        <p>Data   ---</p>
-                        <p>Horário    ---</p>
-                        <p>Pessoas   ---</p>
-                        <p>Nome   ---</p>
-                        <p>Contato   ---</p>
-                        <p>Observações    ---</p>
+                        <p>Data ---</p>
+                        <p>Horário ---</p>
+                        <p>Pessoas ---</p>
+                        <p>Nome ---</p>
+                        <p>Contato ---</p>
+                        <p>Observações ---</p>
                     </div>
                     <div class="card-reserva">
                         <div class="card-body-reserva">
