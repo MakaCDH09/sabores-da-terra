@@ -24,7 +24,7 @@ body {
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-.card {
+.card-reserva {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
@@ -56,7 +56,7 @@ body {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
- .card-body {
+ .card-body-reserva {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
