@@ -1,13 +1,17 @@
+
+/* define o modelo de caixa para incluir bordas e padding no tamanho total */
 * {
   box-sizing: border-box;
 }
 
+/* estilos globais do corpo: fundo, cor do texto e tipografia */
 body {
   margin: 0;
   background-color: #f4f7d5;
   color: #1f2937;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* variáveis de cor reutilizáveis em todo o site */
 :root {
   --cor-fundo-escuro: #1f111a;  
   --cor-fundo-claro: #f5ebe1;
@@ -16,6 +20,7 @@ body {
   --cor-texto-claro: #ffffff;   
 }
 
+/* estilo do cabeçalho principal e posicionamento da navegação */
 header#inicio {
     background-color: var(--cor-fundo-escuro);
     padding: 20px 5%;
@@ -51,11 +56,13 @@ header#inicio nav a {
     white-space: nowrap;
 }
 
+/* destaque no link ativo do menu */
 header#inicio nav a:first-child {
     border-bottom: 2px solid var(--cor-laranja-terra);
     padding-bottom: 4px;
 }
 
+/* estilo dos botões de ação padrão */
 .botoes.botao1{
     background-color: var(--cor-laranja-terra);
     color: var(--cor-texto-claro);
@@ -73,6 +80,7 @@ header#inicio nav a:first-child {
     transform: translateY(2px);
 }
 
+/* seção de introdução com imagem de fundo e gradiente escuro */
 .fontebranca2{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('Sabores da Terra.png');
     background-size: cover;        
@@ -86,6 +94,7 @@ header#inicio nav a:first-child {
     padding-right: 5%;
 }
 
+/* título principal do banner com tamanho responsivo */
 section.fontebranca2 h1 {
     font-family: 'Playfair Display', serif; 
     font-size: clamp(45px, 6vw, 80px); 
@@ -125,6 +134,7 @@ section.fontebranca2 p {
     transform: scale(1.03);                   
 }
 
+/* seção sobre nós com layout em colunas */
 #sobre {
     background-color: var(--cor-fundo-claro);
     padding: 50px 5%; 
@@ -174,11 +184,13 @@ section.fontebranca2 p {
     width: 55%;
 }
 
+/* grade horizontal de cards de pratos */
 .grid-pratos {
     display: flex;
     gap: 15px;
 }
 
+/* card individual de prato com sombra e bordas arredondadas */
 .card-prato {
     background-color: #fff;
     border-radius: 10px;
@@ -209,6 +221,7 @@ section.fontebranca2 p {
     color: #6b7280;
 }
 
+/* seção de produção local com fundo verde e cards informativos */
 #producaol {
     background-color: var(--cor-verde-oliva); 
     padding: 30px 5%;
@@ -283,6 +296,7 @@ section#depoimentos h1 {
     color: var(--cor-verde-oliva);
 }
 
+/* bloco de chamada para ação de reserva */
 #reservas {
     background-color: var(--cor-laranja-terra);
     padding: 80px 10%;
@@ -329,6 +343,7 @@ section#depoimentos h1 {
     transform: translateY(-2px);
 }
 
+/* rodapé com informações de contato e links secundários */
 footer#contato {
     background-color: var(--cor-fundo-escuro); 
     padding: 60px 5%;
@@ -388,6 +403,24 @@ footer#contato li {
 }
 
 
+
+/* responsividade para telas menores: ajusta o footer e o layout geral */
+@media (max-width: 768px) {
+    footer#contato {
+        flex-direction: column; /* Empilha tudo na vertical no celular */
+        gap: 30px;
+    }
+    
+    footer#contato > h2 {
+        max-width: 100%;
+    }
+    
+    footer#contato > h3, 
+    footer#contato > ul {
+        display: block;
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px) {
     header#inicio {
@@ -476,22 +509,4 @@ footer#contato li {
 
     #reservas { padding: 50px 5%; }
     #reservas p.fontebranca { font-size: 15px; margin-bottom: 25px; }
-}
-
-
-@media (max-width: 768px) {
-    footer#contato {
-        flex-direction: column; 
-        gap: 30px;
-    }
-    
-    footer#contato > h2 {
-        max-width: 100%;
-    }
-    
-    footer#contato > h3, 
-    footer#contato > ul {
-        display: block;
-        width: 100%;
-    }
 }
